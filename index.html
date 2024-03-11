@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Abbygale Kerwan | Portfolio </title>
+<link href = "style.css" rel = "stylesheet" type = "text/css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+<div id = "banner">
+    <h1> [ abbygale kerwan ] </h1>
+    <div class = "dropdown">
+        <button class = "menu"> <img src = "img/menu.png"></button>
+        <div class = "dropdown-content">
+            <a href = "index.html"> <h5> home </h5> </a>
+            <a href = "index2.html"> <h5> about </h5></a>
+        </div>
+    </div>
+</div>
+
+<div id = "wrapper">
+    <div id = "hero">
+        <h6> A product designer devoted to crafting intentional and intuitive user experiences. </h6>
+    </div>
+
+    <div id = "collection">
+        <h4> collection </h4>
+        <img src = "img/arrow.png" id = "arrow"></a>
+    </div>
+
+    <div id = "projects">
+        <a href = "index3.html" target = "_blank"> <img src = "img/trainrLogo.png" id = "first"></a>
+        <a href = "https://community.wvu.edu/~jsmoser/KERWAN_a6/" target = "_blank"> <img src = "img/paintLogo.png" id = "second"></a>
+        <a href = "KERWAN_a3/index.html" target = "_blank"> <img src = "img/bbLogo.png" id = "third"></a>
+    </div>
+
+    <div id = "footer">
+        <h2> thank you for visiting! </h2>
+        <a href="mailto:abbygalekerwan@gmail.com"> <img src = "img/email.png" id = "email"></a>
+        <a href = "https://www.linkedin.com/in/abbygalekerwan" target = "_blank"> <img src = img/linkedin.png id = "linkedin"></a>
+        <h3> Abbygale Kerwan 2023 </h3>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        const arrow = $('#arrow');
+        let isAnimated = false;
+        const initialOffset = 0;
+        let lastScrollTop = 0;
+        const projectsOffset = $('#projects').offset().top;
+
+        $('#arrow').on('click', function() {
+            if (!isAnimated) {
+                $('html, body').animate({scrollTop: projectsOffset}, 1000);
+                arrow.css('animation-name', 'scroll');
+            } else {
+                $('html, body').animate({scrollTop: initialOffset}, 1000);
+                arrow.css('animation-name', 'reverse');
+            }
+            isAnimated = !isAnimated;
+        });
+
+        $(window).on('scroll', function() {
+            const scrollPosition = $(this).scrollTop();
+
+            if (scrollPosition > lastScrollTop) {
+                if (scrollPosition >= projectsOffset && !isAnimated) {
+                    $('html, body').animate({scrollTop: projectsOffset}, 1000);
+                    arrow.css('animation-name', 'scroll');
+                    isAnimated = true;
+                }
+            } 
+            
+            else {
+                if (scrollPosition < projectsOffset - 300 && isAnimated) {
+                    $('html, body').animate({scrollTop: initialOffset}, 1000);
+                    arrow.css('animation-name', 'reverse');
+                    isAnimated = false;
+                }
+            }
+            lastScrollTop = scrollPosition;
+        });
+    });
+
+
+    
+</script>
+
+</body>
+</html>

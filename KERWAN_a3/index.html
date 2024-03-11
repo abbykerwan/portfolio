@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Blender Blitz </title> <!-- EDIT -->
+<link href = "style.css" rel = "stylesheet" type = "text/css" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+<body>
+
+
+<div id = "gameboard" 
+    onmousedown = "document.getElementById('sound').play();">
+    <audio id = "sound"><source src = "audio/4.mp3" type = "audio/mp3"></audio>
+
+    <img src = "img/1.png" id = "object1"
+    onmousedown = "document.getElementById('sound1').play();" onclick = "clickCounter()">
+    <audio id = "sound1"><source src = "audio/1.mp3" type = "audio/mp3"></audio>
+    
+    <img src = "img/2.png" id = "object2"
+    onmousedown = "document.getElementById('sound2').play();" onclick = "clickCounter()">
+    <audio id = "sound2"><source src = "audio/2.mp3" type = "audio/mp3"></audio>
+
+    <img src = "img/3.png" id = "object3"
+    onmousedown = "document.getElementById('sound3').play();" onclick = "clickCounter()">
+    <audio id = "sound3"><source src = "audio/3.mp3" type = "audio/mp3"></audio>
+
+    <img src = "img/4.png" id = "blenders">
+
+    <div id = "pause" onclick = "pauseGame()">
+        <img src = "img/pause.png" id = "object4">
+    
+    <div id = "resume" onclick = "resumeGame()">
+        <img src = "img/resume.png" id = "object5">
+    
+</div>
+
+
+<div id = "start" onmouseover = "document.getElementById('sound4').play();" onclick = "beginGame()">
+    <audio id = "sound4"><source src = "audio/soundscape.mp3" type = "audio/mp3"></audio>
+
+    <div id = "intro">
+    <h3> Close the blenders before they splatter! <br> Click HERE to start! </h3> 
+    </div>
+
+    <div id = "score">
+    <h2> &nbsp;<span id = "result"></span></h2>
+    <img src = " img/score.png" id = "scoreText">
+    </div>
+</div>
+
+
+<div id = "endscreen">
+</div>
+
+
+<script>
+function beginGame() {
+    localStorage.clear();
+    localStorage.points = 0;
+    document.getElementById("result").innerHTML = localStorage.points;
+    document.getElementById("object1").style.webkitAnimationPlayState = "running";
+    document.getElementById("object2").style.webkitAnimationPlayState = "running";
+    document.getElementById("object3").style.webkitAnimationPlayState = "running";
+    document.getElementById("intro").style.visibility = "hidden";
+    setTimeout(gameOver, 60000);
+    blenderStart();
+}
+
+
+function clickCounter() {
+    localStorage.points = Number(localStorage.points) + 100;
+    document.getElementById ("result").innerHTML = localStorage.points;
+}
+
+
+function pauseGame() {
+    document.getElementById("object1").style.WebkitAnimationPlayState = "pause";
+    document.getElementById("object2").style.WebkitAnimationPlayState = "pause";
+    document.getElementById("object3").style.WebkitAnimationPlayState = "pause";
+    document.getElementById("sound4").pause();
+}
+
+
+function resumeGame() {
+    document.getElementById("object1").style.webkitAnimationPlayState = "running";
+    document.getElementById("object2").style.webkitAnimationPlayState = "running";
+    document.getElementById("object3").style.webkitAnimationPlayState = "running";
+    document.getElementById("sound4").play();
+}
+
+
+function gameOver() {
+    document.getElementById("endscreen").style.display = 'block';
+}
+
+function blenderStart() {
+  
+     const blenderChoice = Math.floor(Math.random() * 3)+1;
+
+     if (blenderChoice === 1) {
+     document.getElementById("object1").src = "img/1.gif";
+     document.getElementById("object1").classList.add("splashUp");
+     setTimeout(function(){
+    $('#object1').addClass('splashUp').removeClass('splashUp').attr("src", "img/1.png");
+},1000);
+     }
+     if (blenderChoice === 2) {
+     document.getElementById("object2").src = "img/2.gif";
+     document.getElementById("object2").classList.add("splashUp");
+     setTimeout(function(){
+    $('#object2').removeClass('splashUp').attr("src", "img/2.png");
+},1000);
+     }
+     if (blenderChoice === 3) {
+     document.getElementById("object3").src = "img/3.gif";
+     document.getElementById("object3").classList.add("splashUp");
+     setTimeout(function(){
+    $('#object3').removeClass('splashUp').attr("src", "img/3.png");
+},1000);
+     }
+     setTimeout(blenderStart, 1000);
+   }
+  
+ 
+</script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Abbygale Kerwan | Portfolio </title>
+<link href = "style.css" rel = "stylesheet" type = "text/css" />
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+<div id = "banner">
+    <h1> [ abbygale kerwan ] </h1>
+    <div class = "dropdown">
+        <button class = "menu"> <img src = "img/menu.png"></button>
+        <div class = "dropdown-content">
+            <a href = "index.html"> <h5> home </h5> </a>
+            <a href = "index2.html"> <h5> about </h5></a>
+        </div>
+    </div>
+</div>
+
+<div id = "wrapper">
+    <img src = "img/Trainr.png" id = "trframes">
+
+    <img src = "img/arrow.png" id = "arrow2">
+
+    <div id = "slides">
+        <img src = "img/tr1.svg">
+        <img src = "img/tr2.svg">
+        <img src = "img/tr3.svg">
+        <img src = "img/tr4.svg">
+        <img src = "img/tr5.svg">
+        <img src = "img/tr6.svg">
+        <img src = "img/tr7.svg">
+        <img src = "img/tr8.svg">
+        <img src = "img/tr9.svg">
+        <img src = "img/tr10.svg">
+        <img src = "img/tr11.svg">
+        <img src = "img/tr12.svg">
+        <img src = "img/tr13.svg">
+        <img src = "img/tr14.svg">
+        <img src = "img/tr15.svg">
+        <img src = "img/tr16.svg">
+        <img src = "img/tr17.svg">
+    </div>
+
+    <div id = "video">
+        <video height = "520" autoplay muted loop>
+            <source src = "img/recording.mp4" type = "video/mp4">
+        </video>
+    </div>
+    
+    <img src = "img/arrow.png" id = "arrow3">
+
+<div id = "footer">
+    <h2> Thank you for visiting! </h2>
+    <a href="mailto:abbygalekerwan@gmail.com"> <img src = "img/email.png" id = "email"></a>
+    <a href = "https://www.linkedin.com/in/abbygalekerwan" target = "_blank"> <img src = img/linkedin.png id = "linkedin"></a>
+    <h3> Abbygale Kerwan 2023 </h3>
+</div>
+</div>
+
+<script>
+    $(document).ready(function() {
+        const arrow = $('#arrow2');
+        let isAnimated = false;
+        const initialOffset = 0;
+        let lastScrollTop = 0;
+        const slidesOffset = $('#arrow2').offset().top;
+
+        $('#arrow2').on('click', function() {
+            if (!isAnimated) {
+                $('html, body').animate({scrollTop: slidesOffset}, 1500);
+                arrow.css('animation-name', 'scroll2');
+            } else {
+                $('html, body').animate({scrollTop: initialOffset}, 1500);
+                arrow.css('animation-name', 'reverse2');
+            }
+            isAnimated = !isAnimated;
+        });
+
+        $('#arrow3').on('click', function() {
+            $('html, body').animate({scrollTop: initialOffset}, 1500);
+            isAnimated = false;
+            arrow.css('animation-name', 'reverse2');
+        });
+    });
+
+    
+</script>
+
+</body>
+</html>
