@@ -1,13 +1,20 @@
 /*fonts*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap')
+
 @font-face {
     font-family: PoppinsItalic;
     src: url('fonts/Poppins-Italic.ttf');
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap')
+
 @font-face {
     font-family: PoppinsExtraLight;
     src: url('fonts/Poppins-ExtraLight.ttf');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap')
 
 @font-face {
     font-family: PoppinsRegular;
