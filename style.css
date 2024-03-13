@@ -1,21 +1,5 @@
 /*fonts*/
 
-
-@font-face {
-    font-family: PoppinsItalic;
-    src: url('fonts/Poppins-Italic.ttf');
-}
-
-@font-face {
-    font-family: PoppinsExtraLight;
-    src: url('fonts/Poppins-ExtraLight.ttf');
-}
-
-@font-face {
-    font-family: PoppinsRegular;
-    src: url('fonts/Poppins-Regular.ttf');
-}
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
@@ -106,7 +90,9 @@ body {
 }
 
 h1 {
-    font-family: PoppinsExtraLight;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     font-size: 40px;
     letter-spacing: 1px;
     text-align: left;
@@ -114,7 +100,9 @@ h1 {
 }
 
 h2 {
-    font-family: PoppinsItalic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
     font-size: 20px;
     text-transform: lowercase;
     letter-spacing: 2px;
@@ -122,14 +110,18 @@ h2 {
 }
 
 h3 {
-    font-family: PoppinsExtraLight;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     font-size: 12px;
     letter-spacing: 1px;
     text-align: center;
 }
 
 h4 {
-    font-family: PoppinsRegular;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 12px;
     letter-spacing: 1px;
     color: white;
@@ -142,20 +134,26 @@ h4 {
 }
 
 h5 {
-    font-family: PoppinsRegular;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 12px;
     letter-spacing: 1px;
 }
 
 h6 {
-    font-family: PoppinsItalic;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: italic;
     font-size: 67px;
     letter-spacing: 2px;
     margin: 100px auto;
 }
 
 p {
-    font-family: PoppinsExtraLight;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     font-size: 20px;
     text-align: justify;
 }
