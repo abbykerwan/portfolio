@@ -9,7 +9,7 @@
 
 /*background*/
 body {
-    background-color: white;
+    background-color: #ffffff;
 }
 
 /*banner section*/
@@ -24,7 +24,7 @@ body {
 }
 
 .menu {
-    background-color: white;
+    background-color: #F9F9F7;
     padding: 20px;
     border: none;
     right: 20px;
