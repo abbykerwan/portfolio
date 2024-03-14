@@ -39,7 +39,7 @@ body {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #E8E5DD;
+    background-color: #F9F9F7;
     width: 80px;
     border-radius: 20px;
     z-index: 1;
