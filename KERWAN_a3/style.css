@@ -1,0 +1,135 @@
+@font-face {
+    font-family: Shree;
+    src: url("fonts/ShreeDevanagari714.ttf");
+}
+
+@font-face {
+    font-family: Paradise;
+    src: url("fonts/ParadiseGardenPersonalUse-9YJAL.otf")
+}
+
+body {
+    background-image: url("img/sherbet.jpg"); 
+}
+
+#gameboard {
+    height: 600px;
+    width: 600px;
+    margin: 60px;
+    overflow: hidden;
+    position: relative;
+    cursor: url("img/cursor.png"), auto;
+    background-image: url("img/back.jpg");
+    box-shadow: 10px 15px 30px #58595b;
+}
+
+#object1 {
+    position: absolute;
+    left: 25px;
+    top: 165px;
+}
+
+#object1:hover {
+    opacity: .3; 
+}
+
+#object2 {
+    position: absolute;
+    left: 225px;
+    top: 165px;
+}
+
+#object2:hover {
+    opacity: .3; 
+}
+
+#object3 {
+    position: absolute;
+    left: 425px;
+    top: 165px;
+}
+
+#object3:hover {
+    opacity: .3; 
+}
+
+#blenders {
+    position: absolute;
+    width: 512px;
+    left: 45px;
+    top: 270px;
+}
+
+#object4 {
+    size: 30px 30px;
+    position: absolute;
+    top: 550px;
+    right: 22px;
+}
+
+#object5 {
+    size: 30px 30px;
+    position: absolute;
+    top: 510px;
+    right: 20px;
+}
+
+
+.splashUp {
+    animation-name: path;
+    animation-duration: 1s;
+    animation-play-state: running;
+    animation-iteration-count: infinite;
+}
+
+#start {
+    height: 120px;
+    width: 350px;
+    position: fixed;
+    top: 520px;
+    left: 175px;
+    padding: 1px 20px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-family: "Shree";
+}
+
+#score { 
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    top: 576px;
+    left: 220px;
+    font-family: "Shree";
+    font-size: 24px;
+}
+
+#scoreText {
+    position: fixed;
+    top: 610px;
+    left: 82px;
+}
+
+#endscreen{
+    background-image: url(img/endscreen.png);
+    background-repeat: no-repeat;
+    width: 600px;
+    height: 600px;
+    position: absolute;
+    display: none;
+    animation-name: end;
+    animation-duration: 3s;
+    animation-play-state: running;
+}
+
+@keyframes path {
+    0%      {margin-top: 0px;}
+    100%    {margin-top: -165px;}
+
+}
+
+@keyframes end {
+    0%      {bottom: 600px;}
+    100%    {bottom: 0px;}
+}
