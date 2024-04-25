@@ -1,0 +1,1104 @@
+@font-face {
+    font-family: "Against";
+    src: url("fonts/Against.otf");
+}
+
+@font-face {
+    font-family: "Heavy";
+    src: url("fonts/AvenirHeavy.ttf");
+}
+
+@font-face {
+    font-family: "Next";
+    src: url("fonts/AvenirNext.otf");
+}
+
+/*structure*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow-x: hidden;
+    background-image: url("img/back.png");
+    background-size: cover;
+    background-position: fixed;
+}
+
+.wrapper {
+    width: 100%;
+    min-width: 600px;
+    height: 3600vh;
+    min-height: 30400px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.panel {
+    position: relative;
+    height: 100vh;
+    min-height: 800px;
+    padding: 0 10vw;
+}
+
+img {
+    position: absolute;
+}
+
+.buffer {
+    height: 1600px;
+}
+
+/*text*/
+h1 {
+    font-family: "Against";
+    font-size: 85px;
+    color: white;
+}
+
+h2 {
+    font-family: "Against";
+    font-size: 50px;
+    color: white;
+}
+
+h3 {
+    font-family: "Heavy";
+    font-size: 24px;
+    color: white;
+}
+
+p {
+    font-family: "Next";
+    font-size: 17px;
+    color: white;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.titled {
+    text-align: left;
+    margin: 0 auto;
+    padding-top: 180px;
+}
+
+.f2body {
+    width: 450px;
+    margin-top: 50px;
+}
+
+.f3sub {
+    padding-top: 130px;
+}
+
+.chapter4 {
+    padding-top: 200px;
+}
+
+.f4body {
+    width: 450px;
+    padding-top: 100px;
+}
+
+.z1 {
+    position: absolute;
+    right: -200px;
+    top: 100px;
+    font-size: 150px;
+    opacity: 0.5;
+    scale: .85;
+}
+
+.z2 {
+    position: absolute;
+    right: -200px;
+    top: 100px;
+    font-size: 100px;
+    opacity: 0.5;
+    scale: .85;
+}
+
+.z3 {
+    position: absolute;
+    right: -200px;
+    top: 100px;
+    font-size: 80px;
+    opacity: 0.5;
+    scale: .85;
+}
+
+.z4 {
+    position: absolute;
+    right: -200px;
+    top: 100px;
+    font-size: 200px;
+    opacity: 0.5;
+    scale: .85;
+}
+
+.z5 {
+    position: absolute;
+    right: -200px;
+    top: 100px;
+    font-size: 60px;
+    opacity: 0.5;
+    scale: .85;
+}
+
+.z6 {
+    position: absolute;
+    right: -200px;
+    top: 100px;
+    font-size: 100px;
+    opacity: 0.5;
+    scale: .85;
+}
+
+.z7 {
+    position: absolute;
+    right: -200px;
+    top: 100px;
+    font-size: 150px;
+    opacity: 0.5;
+    scale: .85;
+}
+
+.chapter5 {
+    padding-top: 350px;
+}
+
+.f5body {
+    width: 450px;
+    position: absolute;
+    bottom: 50px;
+    left: 38vw;
+}
+
+.chapter6 {
+    width: 600px;
+    text-align: right;
+    position: absolute;
+    top: 150px;
+    left: 25vw;
+}
+
+.f6time1 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 350px;
+    left: 50vw;
+}
+
+.f6body1 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 410px;
+    left: 50vw;
+}
+
+.f6time2 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 550px;
+    left: 50vw;
+}
+
+.f6body2 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 610px;
+    left: 50vw;
+}
+
+.f6comment {
+    width: 300px;
+    text-align: justify;
+    position: absolute;
+    bottom: 30px;
+    left: 50vw;
+    color: #FF4893;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 100px 100px 0 100px;
+    opacity: 0;
+}
+
+.f7chapan {
+    position: absolute;
+    padding-top: 350px;
+}
+
+.f7body {
+    width: 450px;
+    position: absolute;
+    bottom: 50px;
+    left: 38vw;
+}
+
+.chapter8 {
+    width: 600px;
+    text-align: left;
+    position: absolute;
+    top: 150px;
+    left: 10vw;
+}
+
+.f8time1 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 350px;
+    left: 10vw;
+}
+
+.f8body1 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 410px;
+    left: 10vw;
+}
+
+.f8time2 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 550px;
+    left: 10vw;
+}
+
+.f8body2 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 610px;
+    left: 10vw;
+}
+
+.f8comment {
+    width: 300px;
+    text-align: justify;
+    position: absolute;
+    bottom: 30px;
+    left: 10vw;
+    color: #9A62F4;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px 0;
+    opacity: 0;
+}
+
+.chapter9 {
+    padding-top: 150px;
+}
+
+.f9body {
+    width: 450px;
+    position: absolute;
+    bottom: 250px;
+    left: 38vw;
+}
+
+.chapter10 {
+    width: 600px;
+    text-align: right;
+    position: absolute;
+    top: 150px;
+    left: 25vw;
+}
+
+.f10time1 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 350px;
+    left: 50vw;
+}
+
+.f10body1 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 410px;
+    left: 50vw;
+}
+
+.f10time2 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 550px;
+    left: 50vw;
+}
+
+.f10body2 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 610px;
+    left: 50vw;
+}
+
+.f10comment {
+    width: 300px;
+    text-align: justify;
+    position: absolute;
+    bottom: 30px;
+    left: 50vw;
+    color: #30A5FC;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px 0;
+    opacity: 0;
+}
+
+.chapter11 {
+    padding-top: 250px;
+}
+
+.f11body {
+    width: 450px;
+    position: absolute;
+    bottom: 250px;
+    left: 38vw;
+}
+
+.chapter12 {
+    width: 600px;
+    text-align: left;
+    position: absolute;
+    top: 150px;
+    left: 10vw;
+}
+
+.f12time1 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 350px;
+    left: 10vw;
+}
+
+.f12body1 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 410px;
+    left: 10vw;
+}
+
+.f12time2 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 550px;
+    left: 10vw;
+}
+
+.f12body2 {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 610px;
+    left: 10vw;
+}
+
+.f12comment {
+    width: 300px;
+    text-align: justify;
+    position: absolute;
+    bottom: 30px;
+    left: 10vw;
+    color: #89DB6A;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px 0;
+    opacity: 0;
+}
+
+.chapter13 {
+    padding-top: 350px;
+}
+
+.f13body {
+    width: 450px;
+    position: absolute;
+    bottom: 50px;
+    left: 38vw;
+}
+
+.chapter14 {
+    width: 600px;
+    text-align: right;
+    position: absolute;
+    top: 150px;
+    left: 25vw;
+}
+
+.f14time {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 350px;
+    left: 48vw;
+}
+
+.f14body {
+    width: 350px;
+    text-align: justify;
+    position: absolute;
+    top: 410px;
+    left: 48vw;
+}
+
+.f14comment {
+    width: 300px;
+    text-align: justify;
+    position: absolute;
+    bottom: 30px;
+    left: 48vw;
+    color: #FF9648;
+    background-color: white;
+    padding: 20px 40px;
+    border-radius: 100px 100px 100px 0;
+    opacity: 0;
+}
+
+.chapter15 {
+    text-align: left;
+    position: absolute;
+    top: 150px;
+    left: 10vw;
+}
+
+.f15body {
+    width: 450px;
+    text-align: justify;
+    position: absolute;
+    top: 410px;
+    left: 10vw;
+}
+
+.tabs { 
+    width: 320px;
+    position: relative;
+    font-size: 25px;
+    text-align: center;
+    top: 120px;
+    left: 100vw;
+    margin: -10px;
+    padding: 10px 0;
+    border: 5px solid white;
+    border-radius: 100px;    
+    opacity: 0;
+    scale: .6;
+}
+
+.end {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 330px;
+    font-size: 75px;
+}
+
+.footer {
+    position: absolute;
+    bottom: 20px;
+    left: 40vw;
+}
+
+
+/*images*/
+#sun {
+    width: 500px;
+    left: 72vw;
+    top: 100px;
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+#arrow {
+    bottom: 40px;
+}
+
+#f2gg {
+    bottom: 50px;
+    left: 60vw;
+    scale: .65;
+}
+
+#f2img {
+    position: relative;
+    width: 700px;
+    height: 500px;
+    left: -120px;
+    bottom: 0;
+    scale: .65;
+}
+
+#laptop {
+    position: absolute;
+    top: 50px;
+    left: 0;
+}
+
+#phone {
+    position: absolute;
+    top: 150px;
+    left: 550px;
+    transform: rotate(15deg);
+}
+
+#col1 {
+    bottom: -200px;
+    opacity: 0;
+    scale: .7;
+}
+
+#col2 {
+    bottom: -200px;
+    left: 27vw;
+    opacity: 0;
+    scale: .7;
+}
+
+#col3 {
+    bottom: -200px;
+    left: 44vw;
+    opacity: 0;
+    scale: .7;
+}
+
+#col4 {
+    bottom: -200px;
+    left: 61vw;
+    opacity: 0;
+    scale: .7;
+}
+
+#col5 {
+    bottom: -200px;
+    left: 78vw;;
+    opacity: 0;
+    scale: .7;
+}
+
+#f4gg {
+    bottom: -20px;
+    left: 65vw;
+    scale: .65;
+}
+
+#arrow2 {
+    bottom: 40px;
+}
+
+#f6img {
+    position: relative;
+    width: 800px;
+    height: 800px; 
+    left: -250px;
+    top: 50px;
+    scale: .5;
+}
+
+#window {
+    position: absolute;
+    top: 0;
+    left: 62px;
+}
+
+#curtain {
+    position: absolute;
+    top: 0;
+    left: 120px;
+}
+
+#sun2 {
+    position: absolute;
+    top: 40px;
+    left: 450px;
+    animation-name: rotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: running;
+}
+
+#bed {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#f7img {
+    position: relative;
+    width: 1000px;
+    height: 400px;
+    left: -100px;
+    top: 50px;
+    scale: .65;
+}
+
+#smile {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#sparkle1 {
+    position: absolute;
+    left: 10px;
+    bottom: -550px;
+    opacity: 0;
+}
+
+#sparkle2 {
+    position: absolute;
+    left: 100px;
+    bottom: -550px;
+    opacity: 0;
+}
+
+#sparkle3 {
+    position: absolute;
+    left: 0;
+    bottom: -550px;
+    opacity: 0;
+}
+
+#sparkle4 {
+    position: absolute;
+    right: 100px;
+    bottom: -550px;
+    opacity: 0;
+}
+
+#sparkle5 {
+    position: absolute;
+    right: 0;
+    bottom: -550px;
+    opacity: 0;
+}
+
+#f8img {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    left: 30vw;
+    top: 50px;
+    scale: .65;
+}
+
+#swishGG {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+#lcheek {
+    position: absolute;
+    left: 250px;
+    bottom: 310px;
+    opacity: 0;
+}
+
+#rcheek {
+    position: absolute;
+    left: 420px;
+    bottom: 310px;
+    opacity: 0;
+}
+
+#f9img {
+    position: relative;
+    width: 800px;
+    height: 1200px;
+    left: -190px;
+    top: 200px;
+    scale: .65;
+}
+
+#deskGG {
+    position: absolute;
+    top: 250px;
+    left: 0;
+}
+
+#f10img {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    left: -190px;
+    bottom: 0;
+    scale: .65;
+}
+
+#deskGG2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+}
+
+#write {
+    position: absolute;
+    top: 600px;
+    left: 178px;
+}
+
+#cloud {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    opacity: 1;
+    animation-name: mindful;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#line2 {
+    position: absolute;
+    top: 200px;
+    left: 30px;
+    opacity: 1;
+    animation-name: mindful;
+    animation-duration: 3s;
+    animation-delay: 1.3s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#heart {
+    position: absolute;
+    top: 0;
+    left: 270px;
+    opacity: 1;
+    animation-name: mindful;
+    animation-duration: 3s;
+    animation-delay: 2.7s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#eye {
+    position: absolute;
+    top: 180px;
+    left: 150px;
+    opacity: 1;
+    animation-name: mindful;
+    animation-duration: 3s;
+    animation-delay: 1.2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#line3 {
+    position: absolute;
+    top: 0;
+    left: 170px;
+    opacity: 1;
+    animation-name: mindful;
+    animation-duration: 3s;
+    animation-delay: 0.8s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#bulb {
+    position: absolute;
+    top: 130px;
+    left: 350px;
+    opacity: 1;
+    animation-name: mindful;
+    animation-duration: 3s;
+    animation-delay: 0.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#line4 {
+    position: absolute;
+    top: 20px;
+    left: 380px;
+    opacity: 1;
+    animation-name: mindful;
+    animation-duration: 3s;
+    animation-delay: 2.4s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#sparkle6 {
+    position: absolute;
+    top: 120px;
+    left: 250px;
+    opacity: 1;
+    animation-name: mindful;
+    animation-duration: 3s;
+    animation-delay: 1.6s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#lotus {
+    position: absolute;
+    top: 200px;
+    left: 430px;
+    opacity: 1;
+    animation-name: mindful;
+    animation-duration: 3s;
+    animation-delay: 2.4s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#line1 {
+    position: absolute;
+    top: 60px;
+    left: 460px;
+    opacity: 1;
+    animation-name: mindful;
+    animation-duration: 3s;
+    animation-delay: 1.9s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#sparkle7 {
+    position: absolute;
+    top: 20px;
+    left: 80px;
+    opacity: 1;
+    animation-name: mindful;
+    animation-duration: 3s;
+    animation-delay: 2.2s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+#f11imgL {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    left: -150px;
+    bottom: 200px;
+    scale: .65;
+}
+
+#di8{
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+}
+
+#di3 {
+    position: absolute;
+    bottom: 60px;
+    left: 350px;
+}
+
+#di6 {
+    position: absolute;
+    bottom: 150px;
+    left: 450px;
+}
+
+#f11imgR {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    left: 30vw;
+    bottom: 350px;
+    scale: .65;
+}
+
+#di5 {
+    position: absolute;
+    top: 180px;
+    left: 150px;
+}
+
+#di4 {
+    position: absolute;
+    top: 300px;
+    left: 250px;
+}
+
+#di9 {
+    position: absolute;
+    top: 20px;
+    left: 350px;
+}
+
+#f12img {
+    position: relative;
+    width: 600px;
+    height: 800px;
+    left: 30vw;
+    top: 50px;
+    scale: .55;
+}
+
+#lemonGG {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+}
+
+#water {
+    position: absolute;
+    bottom: 200px;
+    left: 428px;
+}
+
+#runGG {
+    position: absolute;
+    left: 100vw;
+    top: 30px;
+    scale: .7;
+}
+
+#f14img {
+    position: relative;
+    width: 800px;
+    height: 800px;
+    left: -200px;
+    bottom: -50px;
+    scale: .65;
+}
+
+#yogaTop {
+    position: absolute;
+    left: 290px;
+    top: 85px;
+}
+
+#yogaBot {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+#sq1 {
+    position: absolute;
+    left: 5vw;
+    bottom: 100px;
+    scale: .6;
+}
+
+#sq1:hover {
+    bottom: 120px;
+    transition: all .5s;
+    scale: .65;
+}
+
+#sq2 {
+    position: absolute;
+    left: 17vw;
+    bottom: 100px;
+    scale: .6;
+}
+
+#sq2:hover {
+    bottom: 120px;
+    transition: all .5s;
+    scale: .65;
+}
+
+#sq3 {
+    position: absolute;
+    left: 29vw;
+    bottom: 100px;
+    scale: .6;
+}
+
+#sq3:hover {
+    bottom: 120px;
+    transition: all .5s;
+    scale: .65;
+}
+
+#sq4 {
+    position: absolute;
+    left: 41vw;
+    bottom: 100px;
+    scale: .6;
+}
+
+#sq4:hover {
+    bottom: 120px;
+    transition: all .5s;
+    scale: .65;
+}
+
+#sq5 {
+    position: absolute;
+    left: 53vw;
+    bottom: 100px;
+    scale: .6;
+}
+
+#sq5:hover {
+    bottom: 120px;
+    transition: all .5s;
+    scale: .65;
+}
+
+#sq6 {
+    position: absolute;
+    left: 65vw;
+    bottom: 100px;
+    scale: .6;
+}
+
+#sq6:hover {
+    bottom: 120px;
+    transition: all .5s;
+    scale: .65;
+}
+
+#sq7 {
+    position: absolute;
+    left: 77vw;
+    bottom: 100px;
+    scale: .6;
+}
+
+#sq7:hover {
+    bottom: 120px;
+    transition: all .5s;
+    scale: .65;
+}
+
+#upArrow {
+    position: absolute;
+    left: 47vw;
+    bottom: -100px;
+    transform: rotate(180deg);
+    opacity: 1;
+}
+
+
+
+/*animations*/
+@keyframes rotate {
+    from    {transform: rotate(0deg);}
+    to      {transform: rotate(360deg);}
+}
+
+@keyframes mindful {
+    0%      {transform: translateY(0px);}
+    25%     {transform: translateY(10px)}
+    75%     {transform: translateY(-10px);}
+    100%    {transform: translateY(0px);}
+}
